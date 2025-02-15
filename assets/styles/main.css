@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+:root {
+  --dkPurple: #231627;
+  --brightRed: #ffcbcb;
+  --dkRedRGrey: #39313B;
+  --dkMagenta: #60040E;
+  --goldenrod: #e1c71f;
+  --medBlue: #0195D3;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+.index {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body,
+a {
+  color: #000;
+}
+
+.link-btn {
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+#classic {
+  /**
+      CLASSIC STYLE
+      */
+}
+#classic #about {
+  background-color: #86ffeb;
+}
+#classic .header {
+  background-color: #fff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0px 15px #ddd;
+}
+#classic .navbar {
+  width: 100%;
+}
+#classic .portrait {
+  border-radius: 50%;
+}
+#classic #static {
+  background-color: #a65abb;
+}
+#classic #service {
+  background-color: #12ccff;
+}
+#classic #consulting {
+  background-color: #f1af07;
+}
+#classic .subtitle {
+  font-weight: 800;
+}
+#classic .static-sub,
+#classic .static-package-name {
+  color: #632d72;
+}
+#classic .service-sub,
+#classic .service-package-name {
+  color: #0389ae;
+}
+#classic .consult-sub,
+#classic .consult-package-name {
+  color: #f1af07;
+}
+#classic .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+#classic .static-type,
+#classic .service-type,
+#classic .consult-type {
+  padding: 1.5em;
+  margin: 0.25em;
+  width: 100%;
+  border-radius: 15px;
+}
+#classic .static-type {
+  box-shadow: 0 0 25px #632d72;
+}
+#classic .service-type {
+  box-shadow: 0 0 25px #0389ae;
+}
+#classic .consult-type {
+  box-shadow: 0 0 25px #996e02;
+}
+#classic .pricing {
+  font-size: 1.5em;
+}
+#classic #static li,
+#classic #service li,
+#classic #consulting li {
+  list-style-type: disc;
+  line-height: 2em;
+}
+#classic #static li::marker {
+  color: #12ccff;
+}
+#classic #service li::marker {
+  color: #f1af07;
+}
+#classic #consulting li::marker {
+  color: #a65abb;
+}
+#classic #service .list-item,
+#classic #consulting .list-item {
+  list-style-type: none;
+  background-color: #fff;
+  border-radius: 15px;
+}
+#classic #contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#classic .social-linkedin {
+  color: rgb(13, 64, 116);
+}
+#classic #socials {
+  width: 100%;
+}
+#classic #socials li {
+  background-color: #c0d880;
+  padding: 0.75em 1.25em;
+  margin: 0.5em 1em;
+  border-radius: 15px;
+}
+#classic .send-btn {
+  background-color: #86ffeb;
+}
+@media only screen and (min-width: 768px) {
+  #classic .about-section {
+    background: #000;
+    background-image: url(../img/jignacio_portrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+  }
+  #classic .about-section::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #classic .about-section .title {
+    color: white;
+  }
+  #classic .about-section .subtitle {
+    color: rgb(255, 191, 0);
+  }
+  #classic .portrait {
+    display: none;
+  }
+  #classic #socials ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #classic .jiggy-info {
+    width: 50%;
+  }
+  #classic #contact {
+    display: block;
+  }
+  #classic .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  #classic #socials {
+    width: 50%;
+  }
+  #classic #socials ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #classic .card {
+    width: 35vw;
+  }
+  #classic .contact {
+    width: 100%;
+  }
+  #classic .send-btn:hover {
+    background-color: rgb(79, 193, 174);
+    color: #fff;
+  }
+  #classic #socials li:hover {
+    background-color: rgb(135, 158, 73);
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #classic .contact {
+    justify-content: center;
+  }
+  #classic #socials {
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  #classic .information {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  #classic .card {
+    width: 30vw;
+  }
+}
+@media only screen and (min-width: 1408px) {
+  #classic .jiggy-info {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1408px) {
+  #classic .jiggy-info {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #classic #contact {
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+  #classic .contact {
+    margin-right: 5em;
+  }
+}
+
+#minimalist .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+}
+#minimalist #about .jiggy-info {
+  padding: 2em 0;
+}
+#minimalist .information {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#minimalist li {
+  list-style-type: square;
+}
+#minimalist .navbar-menu li {
+  list-style-type: none;
+  padding: 0.25em 1em;
+  margin: 0 1em;
+}
+#minimalist .navbar-menu li:hover {
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+}
+#minimalist .navbar-burger {
+  color: black;
+}
+#minimalist .list-item {
+  list-style-type: none;
+}
+#minimalist .subtitle,
+#minimalist .pricing {
+  font-size: 1.5em;
+}
+#minimalist aside {
+  border: 1px solid #000;
+  padding: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+#minimalist #contact-form,
+#minimalist #socials {
+  border: none;
+}
+#minimalist #contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#minimalist .social-linkedin {
+  color: rgb(13, 64, 116);
+}
+#minimalist #socials {
+  width: 100%;
+}
+#minimalist #socials li {
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style-type: none;
+  padding: 0.75em 1.25em;
+  margin: 0.5em 1em;
+  border-radius: 15px;
+}
+#minimalist #socials a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media only screen and (min-width: 768px) {
+  #minimalist #socials ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 980px) {
+  #minimalist #about {
+    display: flex;
+    align-items: center;
+  }
+  #minimalist #about img {
+    height: 45%;
+    width: 45%;
+  }
+  #minimalist #about .jiggy-info {
+    padding: 3em;
+  }
+  #minimalist aside {
+    width: 45%;
+  }
+  #minimalist .contact {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  #minimalist #contact-form {
+    width: 100%;
+  }
+  #minimalist #socials {
+    width: 20%;
+  }
+  #minimalist #socials ul {
+    flex-direction: column;
+  }
+}
+@media only screena and (min-width: 1024px) {
+  #minimalist .contact {
+    justify-content: center;
+  }
+  #minimalist #contact-form {
+    width: 100%;
+  }
+  #minimalist #socials {
+    width: 22%;
+  }
+  #minimalist #socials ul a li {
+    border: 1px solid black;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #minimalist #about .jiggy-info {
+    padding: 5em;
+  }
+  #minimalist .contact {
+    width: 80%;
+  }
+}/*# sourceMappingURL=main.css.map */

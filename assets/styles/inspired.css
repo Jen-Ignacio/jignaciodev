@@ -1,0 +1,22 @@
+.header li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-menu li:hover {
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+}
+
+.navbar-burger {
+  color: black;
+}
+
+.list-item {
+  list-style-type: none;
+}/*# sourceMappingURL=inspired.css.map */

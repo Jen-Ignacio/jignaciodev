@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>J. Ignacio - Devartist</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    >
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body id="classic">
+    <!--
+        OPENING MODAL - FIRST TIME USER EXPERIENCE
+    -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content"></div>
+        <button class="modal-close is-large" aria-label="close">CLOSE</button>
+    </div>
+    <!--
+        OPENING MODAL - FIRST TIME USER EXPERIENCE
+    -->
+    <header class="header p-5 is-flex is-align-items-center is-justify-content-space-around"> 
+        <!--
+            MAIN NAVIGATION
+        -->
+        <nav class="navbar is-flex is-align-content-center is-justify-content-space-around" role="navigation" aria-label="main navigation">
+
+            <div class="navbar-start">
+                <button id="minimalistPageBtn">Minimalist Experience</button>
+            </div>
+
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-menu">
+                    <a href="#about" class="navbar-item">HOME</a>
+                    <a href="#static" class="navbar-item">STATIC PACKAGES</a>
+                    <a href="#service" class="navbar-item">SERVICE PACKAGES</a>
+                    <a href="#consulting" class="navbar-item">CONSULTING PACKAGES</a>
+                    <a href="#contact" class="navbar-item">CONTACT</a>
+                </div>
+            </div>  
+        </nav>
+          <!--
+              MAIN NAVIGATION END
+          --> 
+    </header>
+
+    <main>
+
+        <section id="about" class="section about-section">
+
+            <img class="portrait" src="./assets/img/jignacio_portrait.jpg" alt="jen ignacio image" />
+            <div class="jiggy-info my-5 p-5">
+                <h2 class="title">Jen "Jiggy" Ignacio</h2>
+                <h3 class="subtitle static-sub has-text-weight-bold">Devartist</h3>
+                <p>Good <span class="time"></span>! How can I help you?</p><br/>
+                <p>I enjoy making solutions that are part of the bigger picture. My goal is to help take on common development tasks and concerns so that you and your team are able to focus on the final product. Let me know how I can partner with you to help you move forward!</p>
+            </div>
+
+        </section>
+
+        <div id="packages">
+
+            <section id="static" class="section static-pages has-text-white">
+
+                <h3 class="title has-text-white">STATIC PACKAGES</h3>
+                <p>These packages are for basic frontend/client-side development only. These services are for individuals or companies that are usually starting out or just need a single point of reference for users. Delivery can be within a service such as Bluehost or a customized solution like Vercel - however is best for you based on your goals and priorities.</p><br />
+    
+                <p class="is-italic has-text-weight-bold mb-5">**Pricing in this section includes wireframing and prototyping services.**</p>
+    
+                <div class="information static-information is-flex is-align-items-stretch is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-evenly">
+    
+                    <aside class="card static-type" data-aos="fade-up">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle static-sub m-0">Sign-Up/Survey</h4>
+                            <p class="pricing has-text-weight-bold">$250</p>
+                        </div>
+                        <ul class="p-4">
+                            <li>Design/develop Simple mail sign-up form or survey</li>
+                            <li>Validation on the frontend</li>
+                            <li>Include logic to connect to existing database/backend</li>
+                        </ul>
+                    </aside>
+
+                    <aside class="card static-type" data-aos="fade-up">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle static-sub m-0">Landing Page</h4>
+                            <p class="pricing has-text-weight-bold">$425</p>
+                        </div>
+                        <ul class="p-4">
+                            <li>Single-page design & development</li>
+                            <li>Create overview of product or service</li>
+                            <li>Create link/popup to form or call-to-action</li>
+                            <li>Priority focus on goal or information</li>
+                            <li>Include logic to connect to existing database/backend</li>
+                        </ul>
+
+                        <div>
+                            <div class="is-flex is-justify-content-space-between is-align-items-center">
+                                <h4 class="subtitle static-sub m-0">Combos</h4>
+                            </div>
+                            <ul class="p-4">
+                                <li>Add <span class="static-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$560</span></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+    
+                    <aside class="card static-type" data-aos="fade-up">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle static-sub m-0">Authentication Pages</h4>
+                            <p class="pricing has-text-weight-bold">$425</p>
+                        </div>
+                        <ul class="p-4">
+                            <li>Design/develop login, registration, and logout pages (3 total)</li>
+                            <li>Include logic to connect to existing database/backend</li>
+                        </ul>
+
+                        <div>
+                            <div class="is-flex is-justify-content-space-between is-align-items-center">
+                                <h4 class="subtitle static-sub m-0">Combos</h4>
+                            </div>
+                            <ul class="p-4">
+                                <li>Add <span class="static-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$560</span></li>
+                                <li>Add <span class="static-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$700</span></li>
+                                <li>Add both<span class="static-package-name">"Sign-Up/Survey"</span> + <span class="static-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$910</span></li>
+                            </ul>
+                        </div>
+                        
+                    </aside>
+    
+                    <aside class="card static-type" data-aos="fade-up">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle static-sub m-0">Simple Site</h4>
+                            <p class="pricing has-text-weight-bold">$850</p>
+                        </div>
+                        <ul class="p-4">
+                            <li>Design/develop up to five (5) pages</li>
+                            <li>Includes form validation</li>
+                            <li>Include logic to connect to existing database/backend</li>
+                        </ul>
+
+                        <div>
+                            <div class="is-flex is-justify-content-space-between is-align-items-center">
+                                <h4 class="subtitle static-sub m-0">Combos</h4>
+                            </div>
+                            <ul class="p-4">
+                                <li>Add <span class="static-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$910</span></li>
+                                <li>Add <span class="static-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$1050</span></li>
+                                <li>Add both<span class="static-package-name">"Sign-Up/Survey"</span> + <span class="static-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$1260</span></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+    
+                    <aside class="card static-type" data-aos="fade-up">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle static-sub m-0">Simple Site + Auth</h4>
+                            <p class="pricing has-text-weight-bold">$1050</p>
+                        </div>
+                        <ul class="p-4">
+                            <li>Design/develop up to five (5) pages</li>
+                            <li>Design/develop login, registration, and logout pages (3 total)</li>
+                            <li>Includes form validation</li>
+                            <li>Include logic to connect to existing database/backend</li>
+                        </ul>
+
+                        <div>
+                            <div class="is-flex is-justify-content-space-between is-align-items-center">
+                                <h4 class="subtitle static-sub m-0">Combos</h4>
+                            </div>
+                            <ul class="p-4">
+                                <li>Add <span class="static-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$1260</span></li>
+                                <li>Add <span class="static-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$1400</span></li>
+                                <li>Add both<span class="static-package-name">"Sign-Up/Survey"</span> + <span class="static-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$1610</span></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+
+                </div>
+    
+            </section>
+    
+            <section id="service" class="section service-pages has-text-black">
+                <h3 class="title has-text-black">SERVICE PACKAGES</h3>
+                <p class="mb-5">These packages are for basic backend and fullstack development services. These services are for those that need a database and basic cloud infrastructure, simple API development and authentication for their site. An example of this is a React or Vanilla JS frontend/client-side site that uses Express.js and/or Supabase for authentication. All pricing in this section includes wireframing and prototyping as well as backend infrastructure elements such as Firebase. Express.js is my framework of choice along with Node.js.</p>
+    
+                <h4 class="title">Backend Technology:</h4>
+                <ul class="mb-5 columns is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+                    <li class="is-one-third list-item p-2 m-3">Supabase</li>
+                    <li class="is-one-third list-item p-2 m-3">Firebase</li>
+                    <li class="is-one-third list-item p-2 m-3">Express.js</li>
+                    <li class="is-one-third list-item p-2 m-3">Node.js</li>
+                    <li class="is-one-third list-item p-2 m-3">MongoDB</li>
+                </ul>
+    
+                <p class="is-italic has-text-weight-bold mb-5">**Pricing in this section includes wireframing and prototyping services.**</p>
+    
+                <div class="information service-information is-flex is-align-items-stretch is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-evenly">
+    
+                    <aside class="card service-type"  data-aos="fade-up">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle service-sub m-0">Sign-Up/Survey</h4>
+                            <p class="pricing has-text-weight-bold">$380</p>
+                        </div>
+                        <ul class="p-5">
+                            <li>Design/development of form</li>
+                            <li>Develop database and logic to connect with site</li>
+                            <li>Form validation</li>
+                        </ul>
+                    </aside>
+    
+                    <aside class="card service-type"  data-aos="fade-up">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle service-sub m-0">Landing Page</h4>
+                            <p class="pricing has-text-weight-bold">$640</p>
+                        </div>
+                        <ul class="p-5">
+                            <li>Single-page design & development</li>
+                            <li>Develop database and logic to connect with site</li>
+                        </ul>
+
+                        <div>
+                            <div class="is-flex is-justify-content-space-between is-align-items-center">
+                                <h4 class="subtitle service-sub m-0">Combos</h4>
+                            </div>
+                            <ul class="p-4">
+                                <li>Add <span class="service-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$840</span></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+    
+                    <aside class="card service-type"  data-aos="fade-up">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle service-sub m-0">Authentication</h4>
+                            <p class="pricing has-text-weight-bold">$640</p>
+                        </div>
+                        <ul class="p-5">
+                            <li>Design/development of login, registration, and logout pages (3 total)</li>
+                            <li>Develop database and logic for user authentication to an existing site</li>
+                            <li>Error handling for user registration, login, and password reset</li>
+                        </ul>
+
+                        <div>
+                            <div class="is-flex is-justify-content-space-between is-align-items-center">
+                                <h4 class="subtitle service-sub m-0">Combos</h4>
+                            </div>
+                            <ul class="p-4">
+                                <li>Add <span class="service-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$840</span></li>
+                                <li>Add <span class="service-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$1050</span></li>
+                                <li>Add both<span class="service-package-name">"Sign-Up/Survey"</span> + <span class="service-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$1365</span></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+    
+                    <aside class="card service-type"  data-aos="fade-up">
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle service-sub m-0">Full-Service Site</h4>
+                            <p class="pricing has-text-weight-bold">$1575</p>
+                        </div>
+                        <ul class="p-5">
+                            <li>Includes <span class="service-package-name">"Authentication"</span> package</li>
+                            <li>Design/develop up to five (5) pages</li>
+                            <li>Develop database and logic to connect to an existing site</li>
+                            <li>Error handling for user registration, login, and password reset</li>
+                        </ul>
+
+                        <div>
+                            <div class="is-flex is-justify-content-space-between is-align-items-center">
+                                <h4 class="subtitle service-sub m-0">Combos</h4>
+                            </div>
+                            <ul class="p-4">
+                                <li>Add <span class="service-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$1890</span></li>
+                                <li>Add <span class="service-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$2100</span></li>
+                                <li>Add both<span class="service-package-name">"Sign-Up/Survey"</span> + <span class="service-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$2400</span></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+    
+                </div>
+            </section>
+    
+            <section id="consulting" class="section consulting-pages">
+                <h3 class="title has-text-white">CONSULTING PACKAGES</h3>
+                <p class="has-text-white mb-5">These packages are for if you need pre-development work, such as wireframing, prototyping, and designing. Use these services when you already have a development solution in place.</p>
+
+                <h4 class="title has-text-white">Design/Wireframe Technology:</h4>
+                <ul class="mb-5 columns is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+                    <li class="is-one-third list-item p-2 m-3">Figma</li>
+                    <li class="is-one-third list-item p-2 m-3">Canva</li>
+                    <li class="is-one-third list-item p-2 m-3">Inkscape</li>
+                    <li class="is-one-third list-item p-2 m-3">Krita</li>
+                    <li class="is-one-third list-item p-2 m-3">Clip Studio</li>
+                    <li class="is-one-third list-item p-2 m-3">Pen/Paper</li>
+                </ul>
+
+                <div class="information consult-information is-flex is-align-items-stretch is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-evenly">
+
+                <aside class="card consult-type"  data-aos="fade-up">
+                    <div class="is-flex is-justify-content-space-between is-align-items-center">
+                        <h4 class="subtitle consult-sub m-0">Sign-Up/Survey</h4>
+                        <p class="pricing has-text-weight-bold">$150</p>
+                    </div>
+                    <ul class="p-5">
+                        <li>Wireframing/prototyping/design for a single page</li>
+                        <li>Priority focus on clarity and ease-of-use</li>
+                        <li>Hi-fidelity final design delivery to developer(s)</li>
+                    </ul>
+                </aside>
+
+                <aside class="card consult-type"  data-aos="fade-up">
+                    <div class="is-flex is-justify-content-space-between is-align-items-center">
+                        <h4 class="subtitle consult-sub m-0">Landing Page</h4>
+                        <p class="pricing has-text-weight-bold">$250</p>
+                    </div>
+                    <ul class="p-5">
+                        <li>Wireframing/prototyping/design for a single page</li>
+                        <li>Priority focus on goal or information</li>
+                        <li>Hi-fidelity final design delivery to developer(s)</li>
+                    </ul>
+
+                    <div>
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle consult-sub m-0">Combos</h4>
+                        </div>
+                        <ul class="p-4">
+                            <li>Add <span class="consult-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$340</span></li>
+                        </ul>
+                    </div>
+
+                </aside>
+
+                <aside class="card consult-type"  data-aos="fade-up">
+                    <div class="is-flex is-justify-content-space-between is-align-items-center">
+                        <h4 class="subtitle consult-sub m-0">Authentication</h4>
+                        <p class="pricing has-text-weight-bold">$250</p>
+                    </div>
+                    <ul class="p-5">
+                        <li>Wireframing, prototyping, and design for a login, register, and signout pages (3 total)</li>
+                        <li>Hi-fidelity final design delivery to developer(s)</li>
+                    </ul>
+                    
+                    <div>
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle consult-sub m-0">Combos</h4>
+                        </div>
+                        <ul class="p-4">
+                            <li>Add <span class="consult-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$340</span></li>
+                            <li>Add <span class="consult-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$425</span></li>
+                            <li>Add both<span class="consult-package-name">"Sign-Up/Survey"</span> + <span class="consult-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$550</span></li>
+                        </ul>
+                    </div>
+
+                </aside>
+
+                <aside class="card consult-type"  data-aos="fade-up">
+                    <div class="is-flex is-justify-content-space-between is-align-items-center">
+                        <h4 class="subtitle consult-sub m-0">Site Design</h4>
+                        <p class="pricing has-text-weight-bold">$500</p>
+                    </div>
+                    <ul class="p-5">
+                        <li>Wireframing/prototyping/design for up to five (5) page</li>
+                        <li>Hi-fidelity final design delivery to developer(s)</li>
+                    </ul>
+
+                    <div>
+                        <div class="is-flex is-justify-content-space-between is-align-items-center">
+                            <h4 class="subtitle consult-sub m-0">Combos</h4>
+                        </div>
+                        <ul class="p-4">
+                            <li>Add <span class="consult-package-name">"Sign-Up/Survey"</span>:  <span class="has-text-weight-semibold">$550</span></li>
+                            <li>Add <span class="consult-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$640</span></li>
+                            <li>Add <span class="consult-package-name">"Authentication"</span>:  <span class="has-text-weight-semibold">$640</span></li>
+                            <li>Add both<span class="consult-package-name">"Sign-Up/Survey"</span> + <span class="consult-package-name">"Authentication"</span>:  <span class="has-text-weight-semibold">$765</span></li>
+                            <li>Add both<span class="consult-package-name">"Sign-Up/Survey"</span> + <span class="consult-package-name">"Landing Page"</span>:  <span class="has-text-weight-semibold">$765</span></li>
+                            <li>Add both<span class="consult-package-name">"Landing Page"</span> + <span class="consult-package-name">"Authentication"</span>:  <span class="has-text-weight-semibold">$850</span></li>
+                            <li>Add <span class="consult-package-name">"Sign-Up/Survey"</span> + <span class="consult-package-name">"Landing Page"</span> + <span class="consult-package-name">"Authentication"</span>:  <span class="has-text-weight-semibold">$980</span></li>
+                        </ul>
+                    </div>
+
+                </aside>
+            </div>
+            </section>
+
+            <section id="contact" class="section">
+
+                <div class="contact contact-information p-5">
+
+                    <aside id="contact-form" class="card is-shadowless mx-3">
+                        <div>
+                            <h3 class="title">CONTACT</h3>
+                            <p class="mb-5">If you have any questions regarding any of my services or wish to connect, you may email me using the form below or message me on my <a class="social-linkedin is-link has-text-weight-bold" href="https://www.linkedin.com/in/jennifer-ignacio-2204/" target="_blank">LinkedIn</a>.</p>
+                        </div>
+    
+                        <div class="is-grouped">
+                            <div class="field my-3">
+                                <label for="name" class="label">Name</label>
+                                <div class="control">
+                                    <input id="name" name="name" type="type" class="input">
+                                </div>
+                            </div>
+        
+                            <div class="field my-3">
+                                <label for="email" class="label">Email</label>
+                                <div class="control">
+                                    <input id="email" name="email" type="email" class="input">
+                                </div>
+                            </div>  
+                        </div>
+        
+                        <div class="field my-3">
+                            <label form="message" class="label">Message</label>
+                            <textarea id="message" name="message" class="input" rows="15" cols="33"></textarea>
+                        </div> 
+        
+                        <button class="button btn send-btn is-primary is-large mt-5" onclick="sendEmail()">SEND</button>
+                    </aside>
+    
+                    <aside id="socials" class="card is-shadowless">
+                        <h3 class="title">SOCIALS</h3>
+                        <ul>
+                            <a class="social-item" href="https://github.com/jiggy2204" target="_blank"><li>Github</li></a>
+                            <a class="social-item" href="https://www.linkedin.com/in/jennifer-ignacio-2204/" target="_blank"><li>LinkedIn</li></a>
+                            <a class="social-item" href="https://jiggyart.org" target="_blank"><li>Website</li></a>
+                            <a class="social-item" href="https://bsky.app/profile/jiggyart.bsky.social" target="_blank"><li>BlueSky</li></a>
+                            <a class="social-item" href="https://www.facebook.com/jiggyart" target="_blank"><li>Facebook</li></a>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        AOS.init();
+
+        const sendEmail = () => {
+
+        }
+      </script>
+  </body>
+</html>
