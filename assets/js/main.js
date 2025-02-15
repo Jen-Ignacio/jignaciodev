@@ -19,7 +19,7 @@ let pageType = pageBodyElement.getAttribute('id');
 let html = document.querySelector('html');
 
 if(pageType === 'minimalist'){
-    html.style.scrollPaddingTop = '63px';
+    html.style.scrollPaddingTop = '78px';
 }
 
 if(pageType === 'classic'){
