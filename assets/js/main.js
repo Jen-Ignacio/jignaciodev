@@ -52,13 +52,13 @@ const MinimalistBtn = document.getElementById('minimalistPageBtn');
 if(ClassicBtn){
     ClassicBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        window.location.href = 'http://127.0.0.1:5500/index.html';
+        window.location.href = 'https://jen-ignacio.github.io/jignaciodev/index.html';
     })
 }
 
 if(MinimalistBtn){
     MinimalistBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        window.location.href = 'http://127.0.0.1:5500/minimalist.html';
+        window.location.href = 'https://jen-ignacio.github.io/jignaciodev/minimalist.html';
     })
 }
