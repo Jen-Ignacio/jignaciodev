@@ -21,6 +21,10 @@ h3 {
   font-size: 1.5em;
 }
 
+html {
+  background: #fff;
+}
+
 .index {
   height: 100vh;
   display: flex;
@@ -35,6 +39,15 @@ a {
   color: #000;
 }
 
+.navbar {
+  width: 100%;
+}
+
+.navbar-item {
+  color: #4d4d4d;
+  margin: 0 1em;
+}
+
 .link-btn {
   cursor: pointer;
 }
@@ -42,6 +55,21 @@ a {
 .link-btn:hover {
   background: #000;
   color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  color: #4d4d4d;
+}
+
+.title,
+.subtitle {
+  color: #343434;
+}
+
+input,
+textarea {
+  border: 1px solid #343434;
 }
 
 #classic {
@@ -60,8 +88,12 @@ a {
   z-index: 1000;
   box-shadow: 0 0px 15px #ddd;
 }
-#classic .navbar {
-  width: 100%;
+#classic nav a {
+  border-radius: 10px;
+}
+#classic .navbar-item:hover {
+  background-color: #3282d1;
+  color: #fff;
 }
 #classic .portrait {
   border-radius: 50%;

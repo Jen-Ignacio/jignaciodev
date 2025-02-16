@@ -24,6 +24,10 @@ h3 {
     font-size: 1.5em;
     }
 
+html {
+    background: #fff;
+    }
+
 .index {
     height: 100vh;
     display: flex;
@@ -38,6 +42,15 @@ a {
     color: #000;
     } 
 
+.navbar {
+    width: 100%;
+    }
+
+.navbar-item {
+    color: #4d4d4d;
+    margin: 0 1em;
+    }
+
 .link-btn {
     cursor: pointer;
     }
@@ -45,6 +58,21 @@ a {
 .link-btn:hover {
     background: #000;
     color: #fff;
+    }
+
+.card {
+    background-color: #fff;
+    color: #4d4d4d;
+    }
+
+.title,
+.subtitle {
+    color: #343434;
+    }
+
+input,
+textarea {
+    border: 1px solid #343434;
     }
 
 #classic {
@@ -66,8 +94,15 @@ a {
     box-shadow: 0 0px 15px #ddd;
     }
 
-.navbar {
-    width: 100%;
+
+
+nav a {
+    border-radius: 10px;
+    }
+
+.navbar-item:hover {
+    background-color: #3282d1;
+    color: #fff;
     }
 
 .portrait {
