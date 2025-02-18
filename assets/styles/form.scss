@@ -1,0 +1,147 @@
+
+    #form-page {
+    min-height: 100vh;
+    background-color: #fff;
+    }
+    
+    .container-fluid {
+        position: absolute;
+        top: 0;
+        padding: 1em;
+        background: #fff;
+        }
+
+    .nav-item{
+        border-radius: 15px;
+        transition: all .5s ease;
+        }
+
+    .nav-item:hover {
+        background: #cd377d;
+        color: #fff;
+        }
+
+    .show {
+        height: 100vh;
+        }
+
+    .form {
+        background-color: #fff;
+        margin-top: 4.75rem;
+        }
+
+    .form-header {
+        color: #cd377d;
+        }
+        
+    #icon-info {
+        cursor: pointer;
+        width: 1rem;
+        height: auto;
+        fill: #cd377d;
+        }
+
+    .color-magenta {
+        color: #cd377d;
+        }
+
+    .form-footer {
+        width: fit-content;
+        }
+
+    .policyCheck {
+        width: fit-content;
+        }
+
+    .ai-policy {
+        cursor: pointer;
+        color: #cd377d;
+        text-decoration: underline;
+        }
+
+    .submit-btn,
+    .consult-btn {
+        width: 100%;
+        margin: 0.5em 0;
+        }
+
+    .submit-btn {
+        color:#fff;
+        background: #cd377d;
+        border: 1px solid #cd377d;
+        }
+    
+    .submit-btn:hover {
+        color:#cd377d;
+        background: #fff;
+        border: 1px solid #cd377d;
+        }
+
+    .consult-btn {
+        color:#cd377d;
+        background: #fff;
+        width: fit-content;
+        }
+
+    .btn.selected {
+        background-color: #3df8b4;
+        border: #3df8b4;
+        }
+
+@media only screen and (min-width: 768px){
+    .form {
+        max-width: 75vw;
+        }
+    .formSubmit {
+        width: 50%;
+        margin: 0 auto;
+        }
+    }
+
+
+@media only screen and (min-width: 1024px){
+    .form {
+        max-width: 75vw;
+        }
+    }
+
+@media only screen and (min-width: 1024px){
+    .formSubmit {
+        width: 25%;
+        margin: 0 auto;
+        }
+    }
+
+@media only screen and (min-width: 1366px){
+    .form {
+        max-width: 65vw;
+        }
+    }
+
+@media only screen and (min-width: 1600px){
+    .form {
+        max-width: 50vw;
+        }
+    }
+
+//MODAL STYLE
+
+.modal {
+    overflow-y: scroll;
+    }
+
+.html .is-clipped {
+    overflow: hidden;
+    }
+
+.modal .is-active {
+    position: absoluste;
+    top:0;
+left: 0;
+    z-index: 500;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
