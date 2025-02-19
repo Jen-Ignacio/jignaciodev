@@ -62,3 +62,11 @@ if(MinimalistBtn){
         window.location.href = 'https://jen-ignacio.github.io/jignaciodev/minimalist.html';
     })
 }
+
+const hamburger = document.querySelector('.navbar-burger');
+const navMenu = document.querySelector('.navbar-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    navMenu.classList.toggle('is-active');
+})
