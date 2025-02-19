@@ -406,14 +406,20 @@ li {
     background: #000;
     color: #fff;
     }
+        
+.navbar-menu.is-active {
+    background: #fff;
+    box-shadow: none;
+    min-height: 100vh;
+    }
 
 .navbar-burger {
     color: black;
     }
 
-    .list-item {
-        list-style-type: none;
-        }
+.list-item {
+    list-style-type: none;
+    }
 
 .subtitle,
 .pricing {
