@@ -16,9 +16,13 @@
         transition: all .5s ease;
         }
 
+    .nav-item a:hover {
+        color: #fff !important;
+        -webkit-text-fill-color: #fff;
+        }
+
     .nav-item:hover {
         background: #cd377d;
-        color: #fff;
         }
 
     .show {
