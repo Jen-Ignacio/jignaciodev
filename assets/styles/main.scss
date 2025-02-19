@@ -94,10 +94,14 @@ textarea {
     box-shadow: 0 0px 15px #ddd;
     }
 
-
-
 nav a {
     border-radius: 10px;
+    }
+
+.navbar-menu.is-active {
+    background: #fff;
+    box-shadow: none;
+    min-height: 100vh;
     }
 
 .navbar-item:hover {
@@ -287,6 +291,15 @@ nav a {
     }
 
 @media only screen and (min-width: 1024px){
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        }
+            
+    .navbar-burger {
+        display: none;
+        }
+
     .card {
         width: 35vw;
         }

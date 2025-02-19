@@ -91,6 +91,11 @@ textarea {
 #classic nav a {
   border-radius: 10px;
 }
+#classic .navbar-menu.is-active {
+  background: #fff;
+  box-shadow: none;
+  min-height: 100vh;
+}
 #classic .navbar-item:hover {
   background-color: #3282d1;
   color: #fff;
@@ -242,6 +247,13 @@ textarea {
   }
 }
 @media only screen and (min-width: 1024px) {
+  #classic .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  #classic .navbar-burger {
+    display: none;
+  }
   #classic .card {
     width: 35vw;
   }

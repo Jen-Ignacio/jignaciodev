@@ -31,6 +31,20 @@ const headerHeight = header.offsetHeight;
 const headerPosition = header.getBoundingClientRect().bottom + window.scrollY;
 const offsetPosition = headerPosition - headerHeight;
 
+const hamburger = document.querySelector('.navbar-burger');
+const navMenu = document.querySelector('.navbar-menu');
+const navbarItem = document.querySelectorAll('.navbar-item');
+
+const htmlBottom = document.getElementsByName('html');
+const headerBottom = header.getBoundingClientRect().bottom;
+console.log(headerBottom)
+
+window.addEventListener('resize',() => {
+    html.style.scrollPaddingTop = headerBottom;
+})
+
+console.log(headerBottom);
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -44,7 +58,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }
     });
   });
-
 
 const ClassicBtn = document.getElementById('classicPageBtn');
 const MinimalistBtn = document.getElementById('minimalistPageBtn');
@@ -63,10 +76,15 @@ if(MinimalistBtn){
     })
 }
 
-const hamburger = document.querySelector('.navbar-burger');
-const navMenu = document.querySelector('.navbar-menu');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('is-active');
     navMenu.classList.toggle('is-active');
+
+    navbarItem.forEach(e => {
+        e.addEventListener('click', () => {
+            hamburger.classList.remove('is-active');
+            navMenu.classList.remove('is-active');
+        })
+    })
 })
