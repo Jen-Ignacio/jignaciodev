@@ -26,6 +26,7 @@ h3 {
 
 html {
     background: #fff;
+    scroll-behavior: smooth;
     }
 
 .index {
@@ -46,9 +47,21 @@ a {
     width: 100%;
     }
 
+.navbar-brand {
+    align-items: center;
+    }
+
+.navbar-menu.is-active {
+    background: #fff;
+    box-shadow: none;
+    min-height: 100vh;
+    }
+
 .navbar-item {
     color: #4d4d4d;
     margin: 0 1em;
+    text-align: right;
+    padding: 1em;
     }
 
 .link-btn {
@@ -98,16 +111,11 @@ nav a {
     border-radius: 10px;
     }
 
-.navbar-menu.is-active {
-    background: #fff;
-    box-shadow: none;
-    min-height: 100vh;
-    }
-
 .navbar-item:hover {
     background-color: #3282d1;
     color: #fff;
     }
+
 
 .portrait {
     border-radius: 50%;
@@ -406,7 +414,7 @@ li {
     background: #000;
     color: #fff;
     }
-        
+
 .navbar-menu.is-active {
     background: #fff;
     box-shadow: none;

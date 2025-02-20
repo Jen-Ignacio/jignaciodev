@@ -34,30 +34,7 @@ const offsetPosition = headerPosition - headerHeight;
 const hamburger = document.querySelector('.navbar-burger');
 const navMenu = document.querySelector('.navbar-menu');
 const navbarItem = document.querySelectorAll('.navbar-item');
-
-const htmlBottom = document.getElementsByName('html');
-const headerBottom = header.getBoundingClientRect().bottom;
-console.log(headerBottom)
-
-window.addEventListener('resize',() => {
-    html.style.scrollPaddingTop = headerBottom;
-})
-
-console.log(headerBottom);
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
+const navLinks = document.querySelectorAll('.nav-link');
 
 const ClassicBtn = document.getElementById('classicPageBtn');
 const MinimalistBtn = document.getElementById('minimalistPageBtn');

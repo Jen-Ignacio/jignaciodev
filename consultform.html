@@ -54,7 +54,7 @@
             MAIN NAVIGATION
         -->
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
+          <div class="container-fluid justify-content-end">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -93,12 +93,12 @@
 
         <fieldset class="col d-md-flex mb-3">
             <div class="col mb-3 me-md-3">
-                <label for="name" class="form-label">Name</label>
+                <label for="name" class="form-label" aria-label="Name">Name</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name text input" required>
             </div>
 
             <div class="col">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label"aria-label="Email">Email</label>
                 <input type="email" class="form-control" id="email" aria-describedby="email text input" required>
             </div>
         </fieldset>
@@ -106,8 +106,8 @@
         <fieldset class="col d-md-flex justify-content-between">
 
             <div class="col mb-3 me-md-3">
-                <label for="experience">Select Experience</label>
-                <select id="experience" class="form-select mb-3" aria-label="Experience select dropdown" required>
+                <label for="experience" aria-label="Select Experience">Select Experience</label>
+                <select id="experience" name="exprience" class="form-select mb-3" aria-describedby="Experience select dropdown" required>
                     <option value=""></option>
                     <option value="consult">Consulting Package</option>
                     <option value="static">Static Package</option>
@@ -172,10 +172,8 @@
       </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="./assets/js/form.js"></script>
-    <script type="module" src="./assets/js/authentication.js"></script>
+    <script type="module" src="./assets/js/form.js"></script>
     <script>
-
     </script>
   </body>
 

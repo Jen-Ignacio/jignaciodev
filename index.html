@@ -397,26 +397,26 @@
     
                         <div class="is-grouped">
                             <div class="field my-3">
-                                <label for="name" class="label has-text-dark">Name</label>
+                                <label for="contactName" class="label has-text-dark">Name</label>
                                 <div class="control">
-                                    <input id="name" name="name" type="type" class="input has-text-dark has-background-white">
+                                    <input id="contactName" name="contactName" type="text" class="input has-text-dark has-background-white" required>
                                 </div>
                             </div>
         
                             <div class="field my-3">
-                                <label for="email" class="label has-text-dark">Email</label>
+                                <label for="contactEmail" class="label has-text-dark">Email</label>
                                 <div class="control">
-                                    <input id="email" name="email" type="email" class="input has-text-dark has-background-white">
+                                    <input id="contactEmail" name="contactEmail" type="email" class="input has-text-dark has-background-white" required>
                                 </div>
                             </div>  
                         </div>
         
                         <div class="field my-3">
-                            <label form="message" class="label has-text-dark">Message</label>
-                            <textarea id="message" name="message" class="input has-text-dark has-background-white" rows="15" cols="33"></textarea>
+                            <label form="contactMessage" class="label has-text-dark">Message</label>
+                            <textarea id="contactMessage" name="contactMessage" class="input has-text-dark has-background-white" rows="15" cols="33" minlength="50" required></textarea>
                         </div> 
         
-                        <button class="button btn send-btn is-primary is-large mt-5" onclick="sendEmail()">SEND</button>
+                        <button id="contactBtn" class="button btn send-btn is-primary is-large mt-5">SEND</button>
                     </aside>
     
                     <aside id="socials" class="card is-shadowless">
@@ -436,6 +436,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/contact.js"></script>
     <script>
         AOS.init();
 

@@ -18,10 +18,10 @@
         <!--
             MAIN NAVIGATION
         -->
-        <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
+        <nav class="navbar has-background-white align-items-center" role="navigation" aria-label="main navigation">
 
             <div class="navbar-brand">
-                <button id="minimalistPageBtn">Minimalist Experience</button>
+                <a id="classicPageBtn">Standard Experience</a>
 
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
@@ -39,10 +39,11 @@
                 <a href="#contact" class="navbar-item">CONTACT</a>
                 <a href="./consultform.html" class="navbar-item">ORDER FORM</a>
             </div> 
+            
         </nav>
-          <!--
-              MAIN NAVIGATION END
-          --> 
+        <!--
+            MAIN NAVIGATION END
+        --> 
     </header>
 
     <main>
@@ -405,23 +406,23 @@
     
                         <div class="is-grouped">
                             <div class="field my-3">
-                                <label for="name" class="label has-text-dark">Name</label>
+                                <label for="contactName" class="label has-text-dark">Name</label>
                                 <div class="control">
-                                    <input id="name" name="name" type="type" class="input has-text-dark has-background-white">
+                                    <input id="contactName" name="contactName" type="type" class="input has-text-dark has-background-white" required>
                                 </div>
                             </div>
         
                             <div class="field my-3">
-                                <label for="email" class="label has-text-dark">Email</label>
+                                <label for="contactEmail" class="label has-text-dark">Email</label>
                                 <div class="control">
-                                    <input id="email" name="email" type="email" class="input has-text-dark has-background-white">
+                                    <input id="contactEmail" name="contactEmail" type="email" class="input has-text-dark has-background-white" required>
                                 </div>
                             </div>  
                         </div>
         
                         <div class="field my-3">
-                            <label form="message" class="label has-text-dark">Message</label>
-                            <textarea id="message" name="message" class="input has-text-dark has-background-white" rows="15" cols="33"></textarea>
+                            <label form="contactMessage" class="label has-text-dark">Message</label>
+                            <textarea id="contactMessage" name="contactMessage" class="input has-text-dark has-background-white" rows="15" cols="33" minlength="50" required></textarea>
                         </div> 
         
                         <button class="button btn send-btn is-primary is-large mt-5" onclick="sendEmail()">SEND</button>
@@ -442,5 +443,6 @@
         </div>
     </main>
     <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/contact.js"></script>
   </body>
 </html>
