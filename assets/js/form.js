@@ -9,7 +9,6 @@ let formExperience = "";
 let formExpPackage = "";
 let formAddOns = [];
 let formAIPolicyCheck = false; 
-let formNDAPolicyCheck = false;
 
 const form = document.querySelector('.form');
 let errorDiv = document.createElement('div');
