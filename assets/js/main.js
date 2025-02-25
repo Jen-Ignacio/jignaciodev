@@ -25,17 +25,6 @@ if(pageType === 'minimalist'){
 if(pageType === 'classic'){
     html.style.scrollPaddingTop = '76px';
 }
-
-const header = document.querySelector('header');
-const headerHeight = header.offsetHeight;
-const headerPosition = header.getBoundingClientRect().bottom + window.scrollY;
-const offsetPosition = headerPosition - headerHeight;
-
-const hamburger = document.querySelector('.navbar-burger');
-const navMenu = document.querySelector('.navbar-menu');
-const navbarItem = document.querySelectorAll('.navbar-item');
-const navLinks = document.querySelectorAll('.nav-link');
-
 const ClassicBtn = document.getElementById('classicPageBtn');
 const MinimalistBtn = document.getElementById('minimalistPageBtn');
 
@@ -52,16 +41,3 @@ if(MinimalistBtn){
         window.location.href = 'https://jignacio.dev/minimalist.html';
     })
 }
-
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('is-active');
-    navMenu.classList.toggle('is-active');
-
-    navbarItem.forEach(e => {
-        e.addEventListener('click', () => {
-            hamburger.classList.remove('is-active');
-            navMenu.classList.remove('is-active');
-        })
-    })
-})

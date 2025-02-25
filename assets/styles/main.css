@@ -456,4 +456,14 @@ textarea {
   #minimalist .contact {
     width: 80%;
   }
+}
+
+/**
+    MAINTENANCE PAGE
+    */
+#maintenance .maintenance-item {
+  list-style-type: circle;
+}
+#maintenance li::marker {
+  color: #60ddb5;
 }/*# sourceMappingURL=main.css.map */

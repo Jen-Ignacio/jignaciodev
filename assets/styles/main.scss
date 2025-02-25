@@ -551,3 +551,16 @@ aside {
         }
     }
     }
+
+    /**
+        MAINTENANCE PAGE
+        */
+    #maintenance {
+
+        .maintenance-item {
+            list-style-type: circle;
+            }
+        li::marker {
+            color: #60ddb5;
+            }
+        }
